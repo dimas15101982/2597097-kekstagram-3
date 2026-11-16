@@ -1,7 +1,7 @@
 const checkStringLength = function (anyString, maxStringLength) {
   return anyString.length <= maxStringLength;
-}
-console.log(checkStringLength("qwertyuioprtyrtrthrthgrt", 20));
+};
+checkStringLength('qwertyuioprtyrtrthrthgrt', 20);
 
 const isPalindrome = function (anyString) {
   const modifiedString = anyString.replaceAll(' ', '').toLowerCase();
@@ -10,8 +10,8 @@ const isPalindrome = function (anyString) {
     reversedString += modifiedString[i];
   }
   return reversedString === modifiedString;
-}
-console.log(isPalindrome('Лёша на полке клопа нашёл '));
+};
+isPalindrome('Лёша на полке клопа нашёл ');
 
 const makeStringToNumber = function (anyString) {
   const input = anyString.toString();
@@ -24,4 +24,4 @@ const makeStringToNumber = function (anyString) {
   }
   return parseInt(resultNumber, 10);
 };
-console.log(makeStringToNumber('1 кефир, 0.5 батона'));
+makeStringToNumber('1 кефир, 0.5 батона');
